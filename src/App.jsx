@@ -4,11 +4,11 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 // ============================================================================
 // 🛑 PASTE YOUR SUPABASE KEYS HERE 🛑
 // ============================================================================
-const supabaseUrl = 'https://oxjhxvqatokgbmbgqhey.supabase.co/rest/v1/'; 
+const supabaseUrl = 'https://oxjhxvqatokgbmbgqhey.supabase.co'; 
 const supabaseKey = 'sb_publishable_sR0hAU9cLY--PzewO2SLsQ_mF3pzlmb'; 
 
 // --- Supabase Initialization ---
-const isConfigured = supabaseUrl !== "https://oxjhxvqatokgbmbgqhey.supabase.co/rest/v1/";
+const isConfigured = true;
 let supabase;
 if (isConfigured) {
   supabase = createClient(supabaseUrl, supabaseKey);
